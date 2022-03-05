@@ -1,36 +1,480 @@
+
 *{
     margin: 0;
     padding: 0;
 }
-.counter{
+.head{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 300px;
-    background-color: rgb(74, 49, 83);
-    width: 700px;
-    height: 50vh;
-    border-radius: 50%;
-    margin-left: 600px;
+    background-image: linear-gradient(white,rgb(223, 194, 199));
+    height: 8vh;
 
 }
-#first, #second, #text, #text2{
-    width: 350px;
-    height: 5vh;
-    color: rgb(231, 231, 235);
-    font-size: 35px;
-    background-color: rgb(145, 134, 155);
+body{
+    font-family: 'Poppins', sans-serif;
+   
 }
+
 h1{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    color:rgb(102, 13, 102);
+    text-shadow: 1px 1px rgb(221, 110, 128);
     
-    width: 100px;
-    height: 5vh;
-    margin-left: 35px;
+   
+}
+nav{
+    margin-left: 970px;
+    margin-top: 20px;
+}
+a{
+    margin-left: 150px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.container{
+    width: 100%;
+    height: 40vh;
+    background-image: url("https://images.zawya.com/images/cia/zXlarge/200325115633OUIJ.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0;
+}
+.container h2{
+    font-size: 70px;
+    font-family: sans-serif;
+    margin-left: 350px;
+    color: rgb(192, 133, 23);
+    padding-top: 160px;
+    text-shadow: 5px 5px rgb(86, 87, 83); 
+}
+.container h3{
+    font-size: 40px;
+    margin-left: 600px;
+    text-shadow: 2px 2px 4px rgb(95, 90, 58);
+
+}
+.container p{
+    font-size: 24px;
+    margin-left: 450px;
+    color: rgb(2, 17, 65);
+
+
+}
+.container button{  
+    width: 170px;
+    height: 3vh;
+    font-size: 18px;
+    margin-left: 550px;
+    background-color: rgb(253, 96, 5);
+    transition: background 0.5s;
+}
+.container button:hover{
+    background-color: black;
     color: white;
-    font-style: italic;
+}
+.containers{
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+}
+.left{
+    width: 150px;
+    height: 150px;
+    border-radius: 180%;
+    background-image: url("https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/7/Top_view.jpg");
+    background-size: cover;
+    background-position: center;
+}  
+.lastt{
+    width: 150px;
+    height: 150px;
+    background-image: url("https://5.imimg.com/data5/VK/GS/MY-10281336/mens-cotton-500x500.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 180%;
+}
+.right{
+    width: 150px;
+    height: 150px;
+    background-image: url("https://png.pngtree.com/png-clipart/20210309/original/pngtree-realistic-models-smartphone-mockup-collection-device-front-view-3d-mobile-phone-png-image_5857101.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 180%;
+}
+.last{
+    width: 150px;
+    height: 150px;
+    background-image: url("https://images.unsplash.com/photo-1593526270954-da9b60206ad4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3RhdGlvbmFyeXxlbnwwfHwwfHw%3D&w=1000&q=80");
+    background-size: cover;
+    background-position: center;
+    border-radius: 180%;
+}
+.lastttt{
+    width: 150px;
+    height: 150px;
+    background-image: url("https://static.peachmode.com/media/images/product/96617/small/1618038373_1_IW-RS7427-F_-PEACHMODE.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 180%;
+}
+.left, .right, .last, .lastt, .lasttt, .lastttt, .lasttttt, .lasttttttt, .lastttttt, .lasttt:hover{
+    box-shadow: 3px 5px 18px rgb(29, 29, 63);
+}
+.lasttt{
+    width: 150px;
+    height: 150px;
+    background-image: url("https://static.peachmode.com/media/images/product/117618/small/1630494023_1_POSH-1040-WHITE-PEACHMODE.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 180%;
+}
+.lasttttt{
+    width: 150px;
+    height: 150px;
+    background-image: url("https://5.imimg.com/data5/AK/SO/MY-58564062/western-dresses-3a-solid-colour-slimfit-one-piece-dress-500x500.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 180%;
+}
+.lasttttttt{
+    width: 150px;
+    height: 150px;
+    background-image: url("https://media.istockphoto.com/photos/office-tools-picture-id490658849?k=20&m=490658849&s=612x612&w=0&h=LRn0TUryyb3cdHzUW1z_KbPtXHD2WlFh44bkyeE758E=");
+    background-size: cover;
+    background-position: center;
+    border-radius: 180%;
+}
+.lastttttt{
+    width: 150px;
+    height: 150px;
+    background-image: url("https://m.media-amazon.com/images/I/61FxsUbnavL._SL1500_.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 180%;
+}
+.names{
+     display: flex;
+    
+}
+h2{
+    margin-top: 130px;
+    margin-left: 20px;
+    font-size: 22px;
+}
+#footer{
+    background-color: black;
+    color: white;
+    height: 30vh;
+    margin: 0;
+    margin-top: 15px;
+    padding-left: 90px;
+    font-size: 20px; 
+    text-align: center;   
+}
+.pro{
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: colomn;
+    display: flex;
+    justify-content: center;
+    border-left: 10px solid white;
+}
+.details:hover{
+    
+    transform: translateY(-20px);
+    
+}
+img{
+    width: 220px;
+    height: 240px;
+}
+.productsforu button{
+    width: 400px ;
+    height: 5vh;
+    margin-left: 60px;
+}
+h6{
+    font-size: 30px;
+    margin-left: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(64, 2, 100);
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 150px;
+}
+.details{
+    border-top-style: inset;
+    border-left-style: inset;
+    border-right-style: inset;
+    border-bottom-style: inset;
+    margin-left: 15px;
+    border-width: 1px;
+}
+.details h5{
+    
+    margin-top: 0;
+    font-size: 22px;
+    padding-left: 190px;
+}
+.details h6{
+    margin-top: 0;
+    font-size: 18px;
+    color: black;
+    padding-left: 150px;
+}
+.feature{
+    display: flex;
+    padding-left: 540px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    transition: transform 0.5s;
+    
+}
+.latest{
+    display: flex;
+    padding-left: 540px;
+    align-items: center;
+    width: 55%;
+    flex-wrap: wrap;
+    transition: transform 0.5s;
+
+}
+
+
+.profeature:hover{
+    transform: translateY(-13px);
+    border-color: rgb(165, 161, 161);
+}
+.prolate:hover{
+    transform: translateY(-15px);
+    border-color: rgb(165, 161, 161);
+}
+.mainpro:hover{
+    transform: translateY(-35px);
+    border-color: rgb(165, 161, 161);
+}
+
+.fea h2{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: black;
+    font-size: 32px;
+}
+.late h2{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: black;
+    font-size: 32px;
+
+}
+
+.fea h2::after{
+    content: "";
+    background: rgb(243, 19, 3);
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+}
+.pro h2::after{
+    content: "";
+    background: rgb(243, 19, 3);
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+}
+.late h2::after{
+    content: "";
+    background: rgb(243, 19, 3);
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+
+}
+.pro h2{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: black;
+    font-size: 35px;
+}d
+.pro h2::after{
+    content: "";
+    background: rgb(243, 19, 3);
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+
+.profeature .prolate h5{
+    font-size: 18px;
+}
+.profeature .prolate p{
+    font-size: 16px;
+}
+.mainpro h5{
+    font-size: 22px;
+    padding-left: 270px;
+}
+.mainpro h6{
+    font-size: 20px;
+    padding-left: 230px;
+}
+.latest products h2{
+    margin-left: 50px;
+    
+}
+.offer{
+    display: flex;
+    margin-top: 80px;
+  
+    background: radial-gradient(white, #e7b9e7);
+    width: 100%;
+    height: 50vh;
+
+}
+#offpic{
+    padding-left: 180px;
+    width: 100%;
+    height: 48vh;
+   
+}
+.description{
+    padding-left: 490px;
+    padding-top: 50px;
+
+}
+.description a{
+    background-color: chocolate;
+    border-radius: 30px;
+    height: 30vh;
+
+}
+.pro h2{
+    padding-left: 5px;
+}
+
+#lapname{
     font-size: 40px;
 }
-body{
-    background-color: rgb(196, 195, 187);
+#offer{
+    font-size: 32px;
+}
+small{
+    font-size: 17px;
+}
+.mainproducts{
+    display: flex;
+    padding-left: 310px;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    transition: transform 0.5
+
+}
+.mainproducts img{
+    width: 80%;
+    height: 37vh;
+}
+ #image{
+     width: 200%;
+     height: 80vh;
+     background-color: blue;
+   
+}
+.det h2{
+    width: 100%;
+}
+#imagedetails{
+    width: 20%;
+    height: 40vh;
+    padding-top: 120px;
+}
+.det{
+    display: flex;
+}
+.imagedetails{
+    padding-left: 70px;
+    padding-top: 210px;
+
+}
+#name{
+    font-size: 48px;
+    
+}
+#details{
+    font-size: 28px;
+}
+#addtocart{
+    width: 280px;
+    height: 3vh;
+    font-size: 18px;
+    background-color: rgb(253, 63, 5);
+    transition: background 0.5s;
+    border-radius: 5px;
+    
+}
+.addtocart{
+    display: flex;
+    flex-direction: row;
+}
+#change{
+    width: 60px;
+    font-size: 20px;
+    border-color: rgb(253, 96, 5);
+}
+#boughtdetails{
+    width: 350px;
+    height: 30vh;
+    padding-left: 320px;
+}
+.personaldetails{
+    padding-left: 250px;
+}
+#input{
+    width: 420px;
+    height: 5vh;
+    background-color: rgb(248, 237, 237);
+    padding-left: 60px;
+    
+}
+#last{
+    width: 120px;
+    height: 3vh;
+    font-size: 18px;
+    text-align:left;
+    background-color: rgb(253, 63, 5);
+    transition: background 0.5s;
+    border-radius: 5px; 
+    margin-left: 150px;
+    padding-left: 15px;
 }

@@ -1,39 +1,67 @@
-import axios from "axios";
-import { useState } from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Card from "./card";
+import Footer from "./footer";
+import Prodetails from "./prodetails";
+import Head from "./head";
+import Login from "./login";
+import Main from "./main";
+import Mostrecent from "./mostrecent";
+import Profile from "./profile";
 import "./style.css";
+import Featuredproducts from "./featured";
+import Latest from "./latestproducts";
+import Offer from "./offer";
+import Products from "./products";
+import Buynow from "./buynow";
+
+
+
 function App() {
-  const [a, setA] = useState(1000);
-
-  function Inc() {
-    var c = document.getElementById("text").value|0;
-    console.log(typeof c);
-    axios.post("http://localhost:8080/inc",c).then((res) => {
-      
-      setA(res.data);
-
-    })
-
-  }
-
-  function Dec() {
-    var d = document.getElementById("text2").value|0;
-    axios.post("http://localhost:8080/dec",d).then((res) => {
-     
-      setA(res.data);
-    })
-
-  }
   return (
     <>
-      <div className="counter">
-        <input id="text" type="text" />
-        <button id="first" onClick={Inc}>+</button>
+      <Head />
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/">
+           <>
+              <Main/>
+              <br />
+              <Mostrecent />
+              <br />
+              <br />
+              <br />
+              <br />
+              <hr />
+              <br />
+              <Products/>
+              <Featuredproducts/>
+              <Latest/>
+              <Offer/>
+              <Footer />
+            </>
+            </Route>
 
-        <h1>{a}</h1>
-        <input id="text2" type="text" />
-        <button id="second" onClick={Dec}>-</button>
-      </div>
-    </>
+          <Route exact path="/login">
+              <Login/>
+          </Route>
+
+          <Route exact path="/profile">
+              <Profile/>
+          </Route>
+
+          <Route exact path="/prodetails">
+                <Prodetails/>
+          </Route>
+
+          <Route exact path="/card">
+            <Card/>
+      </Route>
+       <Route exact path="/buynow">
+            <Buynow/>
+       </Route>
+        </Switch>
+      </BrowserRouter>
+</>
   )
 }
 export default App;
